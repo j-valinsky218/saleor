@@ -14,6 +14,7 @@ All notable, unreleased changes to this project will be documented in this file.
 ### GraphQL API
  - Add `name` parameter to `ProductVariantInput` - #10456 by @SzymJ
 
+- Add `taxExemptionManage` mutation - #10344 by @SzymJ
 
 # 3.6.0
 
