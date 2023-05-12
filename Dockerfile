@@ -15,6 +15,11 @@ RUN pip install -r requirements_dev.txt
 ### Final image
 FROM python:3.9-slim
 
+RUN addgroup --system <group>
+RUN adduser --system <user> --ingroup <group>
+USER <user>:<group>
+
+
 RUN groupadd -r saleor && useradd -r -g saleor saleor
 
 RUN apt-get update \
